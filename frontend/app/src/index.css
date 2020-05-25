@@ -1,0 +1,41 @@
+.menuButton {
+    width: auto;
+    height: 40px;
+    background-color: #3D3737;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inlineBlock;
+    font-size: 16px;
+    font-weight: bold;
+}
+.menuButton:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+#userMenu:hover + .dropDownMenu {display: block;}
+
+.dropDownMenu:hover {
+    display: block;
+    cursor: pointer;
+}
+
+.dropDownMenu:hover + #userMenu {background-color: blue;}
+
+
+.dropDownMenu {
+    display: none;
+    background-color: red;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#Logo {
+    width: 80px;
+    height: 40px;
+}
+#Logo:hover {
+    cursor: pointer;
+}
+

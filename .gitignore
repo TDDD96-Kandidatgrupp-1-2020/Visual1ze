@@ -1,0 +1,20 @@
+#Environments
+.venv
+venv/
+
+#Visual studio code
+.vscode
+.vs
+
+
+#Pycache
+*.pyc
+*.pyo
+
+
+#pycharm
+.idea
+
+*.db
+
+databas/out/*

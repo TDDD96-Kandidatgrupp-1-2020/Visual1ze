@@ -1,0 +1,33 @@
+image: python:3.8.2
+
+before_script:
+  - python --version
+  - pip install setuptools==33.1.1
+  - pip install --no-cache-dir -r server/requirements.txt
+
+stages:
+  - runtest
+  - runtest2
+
+test_db:
+  stage: runtest
+  script:
+    - python server/dbtest.py
+
+test_approver_routes:
+    stage: runtest2
+    script:
+      - cd server
+      - python -m unittest route_test.ApproverRouteTest
+
+test_reader_routes:
+    stage: runtest2
+    script:
+      - cd server
+      - python -m unittest route_test.ReaderRouteTest
+
+test_Admin_routes:
+    stage: runtest2
+    script:
+      - cd server
+      - python -m unittest route_test.AdminRouteTest
