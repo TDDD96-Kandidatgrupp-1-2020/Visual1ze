@@ -4,7 +4,7 @@ Flask-JWT-Extended==3.24.1
 Flask-SQLAlchemy==2.4.1
 Flask-Cors==3.0.8
 itsdangerous==1.1.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 PyJWT==1.7.1
 six==1.14.0
